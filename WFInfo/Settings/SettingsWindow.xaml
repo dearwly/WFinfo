@@ -506,6 +506,10 @@
                                                   Content="한국어"
                                                   FontSize="14"
                                                   Background="#FF1B1B1B" />
+                                    <ComboBoxItem Tag="zh"
+                                                  Content="中文"
+                                                  FontSize="14"
+                                                  Background="#FF1B1B1B" />
                                 </ComboBox>
                             </UniformGrid>
                         </Border>

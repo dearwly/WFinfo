@@ -59,7 +59,7 @@ namespace WFInfo
             SecondEngine = CreateEngine();
         }
 
-        private TesseractEngine CreateEngine() => new TesseractEngine(DataPath, Locale)
+        private TesseractEngine CreateEngine() => new TesseractEngine(DataPath, (Locale == "zh") ? "zh+en" : Locale)
         {
             DefaultPageSegMode = PageSegMode.SingleBlock
         };
@@ -93,7 +93,8 @@ namespace WFInfo
             JObject traineddata_checksums = new JObject
             {
                 {"en", "7af2ad02d11702c7092a5f8dd044d52f"},
-                {"ko", "c776744205668b7e76b190cc648765da"}
+                {"ko", "c776744205668b7e76b190cc648765da"},
+                {"zh", "6965cb3213edd961cb16264e2ea45f5c"}
             };
 
             // get trainned data

@@ -97,7 +97,7 @@ namespace WFInfo
         // UI - Scaling used in Warframe
         public static double uiScaling;
 
-        public static Regex RE = new Regex("[^a-z가-힣]", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        public static Regex RE = new Regex("[^a-z가-힣一-龟]", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
         // Pixel measurements for reward screen @ 1920 x 1080 with 100% scale https://docs.google.com/drawings/d/1Qgs7FU2w1qzezMK-G1u9gMTsQZnDKYTEU36UPakNRJQ/edit
         public const int pixleRewardWidth = 968;
